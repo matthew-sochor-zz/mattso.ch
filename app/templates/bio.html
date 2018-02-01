@@ -1,0 +1,31 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{% block title %}mattso.ch/or{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="outer">
+  <div align="middle" class="middle">
+    <h1> Matthew Sochor </h1> <br>
+    <img src="{{ me_url }}" width=200 heigh=200 alt="Me">
+    <br> <br>
+    Data scientist at Progressive <br>
+    Ex-biochemist/biophysicist from Penn <br>
+    Former accordionist in <a href="https://jubeljenkins.bandcamp.com/">Jubel Jenkins</a> <br> <br>
+    Feel free to email me: <br>
+    matthew.sochor@gmail.com <br>
+    or twitter @almosochor
+
+  </div>
+</div>
+
+{{ super() }}
+{% endblock %}
