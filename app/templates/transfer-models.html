@@ -16,9 +16,13 @@
   <div align="middle" class="middle">
     <h1>Transfer models</h1><br><br>
     Fully trained models ready to be imported to <a href="https://github.com/matthew-sochor/transfer">transfer</a><br><br>
-    <a href="{{ url_for('static', filename='models/trail-cam-animal-v-empty_best_weights_kfold_0.tar.gz') }}" download>Trail cam: animal vs empty</a> <br>
-    <a href="{{ url_for('static', filename='models/trail-cam-animals-no-empty_best_weights_kfold_0.tar.gz') }}" download>Trail cam: individual animal ids</a> <br>
-    <a href="{{ url_for('static', filename='models/trail-cam-animals_best_weights_kfold_0.tar.gz') }}" download>Trail cam: individual animal ids + empty</a> <br>
+
+    <h3><a href="https://www.kaggle.com/c/plant-seedlings-classification">Kaggle: Plant seedling classification</a></h3><br>
+    <a href="{{ url_for('static', filename='models/seedling-resnet_best_weights.tar.gz') }}" download>Resnet with 5-fold cross validation: Scores ~0.96</a> <br><br>
+    <h3>Trail cam identification for Cleveland Metroparks</h3><br>
+    <a href="{{ url_for('static', filename='models/trail-cam-animal-v-empty_best_weights_kfold_0.tar.gz') }}" download>generic animal vs empty</a> <br>
+    <a href="{{ url_for('static', filename='models/trail-cam-animals-no-empty_best_weights_kfold_0.tar.gz') }}" download>individual animal ids</a> <br>
+    <a href="{{ url_for('static', filename='models/trail-cam-animals_best_weights_kfold_0.tar.gz') }}" download>individual animal ids + empty</a> <br>
   </div>
 </div>
 
