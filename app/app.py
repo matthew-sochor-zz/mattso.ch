@@ -33,6 +33,6 @@ def bio():
     return render_template('bio.html')
 
 @app.route('/transfer-models')
-def bio():
+def transfer_models():
 
     return render_template('transfer-models.html')
