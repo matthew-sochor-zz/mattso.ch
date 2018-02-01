@@ -30,7 +30,9 @@ def index():
 @app.route('/or')
 def bio():
 
-    return render_template('bio.html')
+    me = url_for('static',
+                      filename='images/me.jpg')
+    return render_template('bio.html', me_url = me)
 
 @app.route('/transfer-models')
 def transfer_models():
